@@ -4,7 +4,7 @@ A project showcasing 90's design aesthetic, meticulously crafted using SCSS and 
 
 ## Checkout The Live Demo
 
-[peachfolio90s.com](https://peachfolio90s.com/){:target="_blank"}
+[peachfolio90s.com](https://peachfolio90s.com/)
 
 ## The Design
 
@@ -24,7 +24,7 @@ A project showcasing 90's design aesthetic, meticulously crafted using SCSS and 
 
 ## Author
 
-- [Github](https://github.com/Peac-h){:target="_blank"}
-- [LinkedIn](https://www.linkedin.com/in/tamta-lomidze-b336b9266/){:target="_blank"}
-- [Twitter](https://twitter.com/p6eac_h){:target="_blank"}
-- [Portfolio](https://peachfolio90s.com/){:target="_blank"}
+- [Github](https://github.com/Peac-h)
+- [LinkedIn](https://www.linkedin.com/in/tamta-lomidze-b336b9266/)
+- [Twitter](https://twitter.com/p6eac_h)
+- [Portfolio](https://peachfolio90s.com/)
