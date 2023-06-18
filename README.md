@@ -8,7 +8,7 @@ A project showcasing 90's design aesthetic, meticulously crafted using SCSS and 
 
 ## The Design
 
-![peachfolio90s - Desktop](https://raw.githubusercontent.com/Peac-h/peachfolio90s/main/Screen%20Shot%202023-06-18%20at%201.45.12%20PM.png)
+![peachfolio90s - Desktop](https://raw.githubusercontent.com/Peac-h/peachfolio90s/main/Screen%20Shot%202023-06-18%20at%205.55.02%20PM.png)
 ![peachfolio90s - Desktop](https://raw.githubusercontent.com/Peac-h/peachfolio90s/main/Screen%20Shot%202023-06-18%20at%201.45.33%20PM.png)
 ![peachfolio90s - Desktop](https://raw.githubusercontent.com/Peac-h/peachfolio90s/main/Screen%20Shot%202023-06-18%20at%201.46.01%20PM.png)
 ![peachfolio90s - Desktop](https://raw.githubusercontent.com/Peac-h/peachfolio90s/main/Screen%20Shot%202023-06-18%20at%201.59.27%20PM.png)
