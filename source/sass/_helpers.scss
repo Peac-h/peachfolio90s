@@ -53,6 +53,11 @@
   opacity: 0;
   visibility: hidden;
 
+  @media only screen and (max-width: $bp-medium) {
+    opacity: 1;
+    visibility: visible;
+  }
+
   @for $i from 1 through $workCount {
     $translateX: (random(40) + 30);
     $blur: (random(35) + 5);
@@ -60,6 +65,11 @@
     &:nth-child(#{$i}) {
       translate: #{$translateX}rem;
       filter: blur(#{$blur}px);
+
+      @media only screen and (max-width: $bp-medium) {
+        translate: none;
+        filter: none;
+      }
     }
   }
 
