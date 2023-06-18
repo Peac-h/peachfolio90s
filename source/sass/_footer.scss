@@ -27,6 +27,10 @@
   pointer-events: none;
   transition: 0.3s ease-out;
 
+  @media (any-hover: none) {
+    display: none;
+  }
+
   .cursor {
     position: absolute;
     left: -1.4vw;

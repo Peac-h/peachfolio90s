@@ -15,6 +15,9 @@
     border-bottom-left-radius: max(2vw, 2rem);
     background: var(--col-black-shade);
     padding: max(1vw, 1rem) max(1.5vw, 1.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     cursor: pointer;
 
     &-shape {
@@ -48,6 +51,11 @@
       &-span {
         display: block;
         transition: $transition-middle;
+
+        &-last {
+          text-align: end;
+          translate: 0.3rem;
+        }
       }
     }
 

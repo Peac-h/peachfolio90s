@@ -15,7 +15,8 @@ class HeroView extends View {
     const currDate = new Intl.DateTimeFormat("ka-GE", {
       hour: "numeric",
       minute: "numeric",
-      weekday: "long",
+      day: "numeric",
+      month: "numeric",
     }).format(new Date());
 
     this._date.innerHTML = `${currDate} in Tbilisi`;
