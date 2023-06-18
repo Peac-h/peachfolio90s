@@ -1,0 +1,35 @@
+.work-section {
+  background: var(--col-shade);
+  margin: max(1vw, 1rem) 0;
+  margin-left: -7vw;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    align-items: center;
+  }
+
+  .work-list {
+    width: max-content;
+    height: 80vh;
+    margin: max(1vw, 1rem) max(17vw, 12rem);
+    margin-right: max(40vw, 30rem);
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: max(1vw, 1rem);
+    gap: 5vh;
+    justify-content: center;
+    position: relative;
+
+    @media only screen and (max-width: $bp-medium) {
+      height: calc(100vh - 2rem);
+      gap: 5rem;
+    }
+
+    &-container {
+      display: flex;
+      gap: max(4vw, 5rem);
+    }
+  }
+}

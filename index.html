@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Unleash the Power of PeachFolio '90s: Your Ultimate Front-End Web Developer Showcase. Delve into a world of captivating designs, unrivaled user experiences, and game-changing digital solutions. Dive deep into my impressive projects and let's collaborate to bring your vision to life!"
+    />
+    <meta name="keywords" content="Front-End, Web Developer, Portfolio" />
+    <meta name="author" content="Peach" />
+
+    <meta property="og:title" content="Peach Portfolio" />
+    <meta
+      property="og:description"
+      content="Unleash the Power of PeachFolio '90s: Your Ultimate Front-End Web Developer Showcase. Delve into a world of captivating designs, unrivaled user experiences, and game-changing digital solutions. Dive deep into my impressive projects and let's collaborate to bring your vision to life!"
+    />
+    <meta property="og:url" content="https://peachfolio90s.com" />
+    <meta property="og:type" content="Landing Page" />
+    <meta property="og:site_name" content="PeachFolio '90s" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- FAV -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./source/fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./source/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./source/fav/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="source/sass/main.scss" />
+    <script type="module" src="source/js/controller.js"></script>
+
+    <title>Peach Portfolio</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MZN6PGCCMM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MZN6PGCCMM");
+    </script>
+  </head>
+
+  <body>
+    <div class="splash-screen" id="splashScreen">
+      <h1 class="splash-screen__title hide" id="splashScreenHeader">
+        Peach <span class="item-italic">Portfolio</span>
+        <span class="item-highlighted">'90s</span>
+      </h1>
+    </div>
+
+    <div class="page-frame hide" id="pageFrame">
+      <header class="hero-section" id="sectionHero">
+        <div class="logo">
+          <div class="logo-shape" id="btnReload">
+            Peach<span class="logo-subtitle">Folio</span>'90s
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <div class="introductory-text">
+            <p class="introductory-text__left">
+              <span class="introductory-text-span animated-item--translateY"
+                ><span class="item-highlighted-italic">Hello.</span> My name is
+                Tamta Lomidze,
+              </span>
+              <span class="introductory-text-span animated-item--translateY"
+                >and I'm a Front-End Web Developer
+              </span>
+              <span
+                class="introductory-text-span animated-item--translateY mg-bottom-2"
+                >based in Tbilisi, Georgia.</span
+              >
+              <span class="introductory-text-span animated-item--translateY"
+                >Being In love with the art of
+              </span>
+              <span class="introductory-text-span animated-item--translateY">
+                programming, I have passionately
+              </span>
+              <span
+                class="introductory-text-span animated-item--translateY mg-bottom-2"
+                >been creating digital experiences.
+              </span>
+              <span class="introductory-text-span animated-item--translateY"
+                >Nowadays, I'm dedicated to making
+              </span>
+              <span class="introductory-text-span animated-item--translateY"
+                >my voice heard in this digital noise,
+              </span>
+              <span class="introductory-text-span animated-item--translateY">
+                and turning this love into the work
+              </span>
+              <span
+                class="introductory-text-span animated-item--translateY mg-bottom-2"
+              >
+                of my life.
+              </span>
+            </p>
+            <p class="introductory-text__right">
+              <span class="introductory-text-span animated-item--translateY"
+                >When it comes to my outlook on life,
+              </span>
+              <span class="introductory-text-span animated-item--translateY"
+                >I love freedom, cherish individuality,
+              </span>
+              <span
+                class="introductory-text-span animated-item--translateY mg-bottom-2"
+                >and am deeply humane.</span
+              >
+              <span class="introductory-text-span animated-item--translateY"
+                >I'm in search of REMARKABLE</span
+              >
+              <span class="introductory-text-span animated-item--translateY"
+                >opportunities.</span
+              >
+            </p>
+          </div>
+
+          <nav class="navigation" id="sectionNavigation">
+            <ol class="navigation-list" id="navigationListContainer">
+              <li>
+                <a
+                  class="navigation-link"
+                  href="#sectionHero"
+                  data-role="nav-item"
+                >
+                  <div class="navigation-item animated-item--translateX">
+                    00. Home
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="navigation-link"
+                  href="#workList"
+                  data-role="nav-item"
+                >
+                  <div class="navigation-item animated-item--translateX">
+                    01. Projects
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="navigation-link"
+                  href="#sectionProfile"
+                  data-role="nav-item"
+                >
+                  <div class="navigation-item animated-item--translateX">
+                    02. Profile
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="navigation-link"
+                  href="#sectionContact"
+                  data-role="nav-item"
+                >
+                  <div class="navigation-item animated-item--translateX">
+                    03. Contact
+                  </div>
+                </a>
+              </li>
+            </ol>
+          </nav>
+
+          <div class="current-time-georgia" id="currDateGeorgia"></div>
+        </div>
+      </header>
+
+      <main>
+        <section class="work-section" id="sectionWork">
+          <ol class="work-list" id="workList">
+            <div class="work-list-container row-1" id="workListRow1"></div>
+            <div class="work-list-container row-2" id="workListRow2"></div>
+            <div class="work-list-container row-3" id="workListRow3"></div>
+
+            <!-- <li
+              class="work-item work-item-styled animated-item--random ${styleEl}"
+              data-type="${dataElement.type}"
+              data-role="work-item"
+            >
+              <div class="work-index">${indexNum}</div>
+              <div class="work-title">
+                <a href="${dataElement.link}" target="_blank"
+                  >${dataElement.title}</a
+                >
+              </div>
+              <div class="work-tools">${dataElement.tools}</div>
+              <img
+                class="work-img"
+                data-img="${dataElement.img}"
+                alt="project screenshot"
+              />
+            </li> -->
+
+            <!-- <li
+              class="work-item animated-item--random ${styleEl}"
+              data-type="${dataElement.type}"
+              data-role="work-item"
+            >
+              <div class="work-index">${indexNum}</div>
+              <div class="work-details">
+                <div>
+                  <div class="work-heading">${dataElement.title}</div>
+                  <div>${dataElement.description}</div>
+                </div>
+                <div>
+                  <div class="work-header">Used Tools</div>
+                  <div>${dataElement.tools}</div>
+                </div>
+                <div>
+                  <div class="work-header">
+                    <a href="${dataElement.link}" target="_blank">Page Link</a>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="work-img"
+                data-img="${dataElement.img}"
+                alt="project screenshot"
+              />
+            </li> -->
+          </ol>
+          <div class="work-filter hide" id="workFilterContainer">
+            <div class="work-filter-title" id="filtersHeader">
+              <!-- All <span> [num] creations</span> -->
+            </div>
+            <ol class="work-filter-list" id="filterList">
+              <li class="list-item">
+                <div class="filter-item">All (selected) Projects</div>
+                <div
+                  class="filter-item filter-item--hover"
+                  data-role="all (selected) projects"
+                >
+                  All (selected) Projects
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="filter-item">Learning Projects</div>
+                <div
+                  class="filter-item filter-item--hover"
+                  data-role="learning projects"
+                >
+                  Learning Projects
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="filter-item">Personal Projects</div>
+                <div
+                  class="filter-item filter-item--hover"
+                  data-role="personal projects"
+                >
+                  Personal Projects
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="filter-item">Website Clones</div>
+                <div
+                  class="filter-item filter-item--hover"
+                  data-role="website clones"
+                >
+                  Website Clones
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="profile-section" id="sectionProfile">
+          <div class="profile-column profile-column--left">
+            <p class="profile-column-paragraph">
+              <span class="profile-column-span"
+                >Technologies I work with: CSS, JavaScript (ES6),</span
+              >
+              <span class="profile-column-span"
+                >TypeScript, alongside with: SASS, Bootstrap,
+              </span>
+              <span class="profile-column-span"
+                >jQuery, and React (which I'm mastering now).
+              </span>
+            </p>
+            <p class="profile-column-paragraph">
+              <span class="profile-column-span"
+                >Tools I use: NPM, Parcel, Babel, Webpack, Figma,</span
+              >
+              <span class="profile-column-span">Canva, Git, and GitHub.</span>
+            </p>
+          </div>
+
+          <div class="profile-column profile-column--right">
+            <p class="profile-column-paragraph">
+              <span class="profile-column-span"
+                >I follow methodologies such as BEM Notation,</span
+              >
+              <span class="profile-column-span"
+                >Atomic Design, Component-Based Development,</span
+              >
+              <span class="profile-column-span"
+                >RWD, Performance Optimization.</span
+              >
+            </p>
+            <p class="profile-column-paragraph">
+              <span class="profile-column-span"
+                >I adhere to the Object Oriented Programming</span
+              >
+              <span class="profile-column-span"
+                >paradigm and MVC Architecture.</span
+              >
+            </p>
+          </div>
+        </section>
+
+        <section class="contact-section" id="sectionContact">
+          <div class="socials-container" id="socialsContainer">
+            <div class="social-item">
+              <a href="https://github.com/Peac-h" target="_blank"
+                >G<span>i</span>th<span>u</span>b</a
+              >
+            </div>
+            <div class="social-item mg-bottom-5">
+              <a href="mailto: p6eac.h@gmail.com" target="_blank"
+                >Gma<span>i</span>l</a
+              >
+            </div>
+            <div class="social-item">
+              <a href="https://twitter.com/p6eac_h" target="_blank"
+                >Tw<span>i</span>tt<span>e</span>r</a
+              >
+            </div>
+            <div class="social-item">
+              <a
+                href="https://www.linkedin.com/in/tamta-lomidze-b336b9266/"
+                target="_blank"
+                >L<span>i</span>nk<span>e</span>dIn</a
+              >
+            </div>
+          </div>
+          <button class="scroll-to-start-button" id="scrollToStartButton">
+            <span>Back To Start</span>
+          </button>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="footer-progress-bar" id="footerProgressBar"></div>
+        <div class="cursor-container" id="cursorContainer">
+          <div class="cursor" id="cursor"></div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.page-frame {
+  height: 100vh;
+  overflow-x: scroll;
+
+  display: flex;
+  position: relative;
+
+  background: var(--col-main);
+  transition: opacity 1s ease-out;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,83 @@
+.mg-bottom-5 {
+  margin-bottom: 5.5rem;
+
+  @media only screen and (min-width: $bp-huge) {
+    margin-bottom: 7.5rem;
+  }
+}
+
+.mg-bottom-2 {
+  margin-bottom: max(2vh, 2rem);
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+// naming is used in JS
+.item-italic {
+  font-style: italic;
+}
+
+.item-highlighted {
+  color: var(--col-yellow);
+  font-style: normal;
+  font-weight: bold;
+}
+
+.item-highlighted-italic {
+  color: var(--col-yellow);
+  font-style: italic;
+  font-weight: bold;
+}
+
+// naming is used in JS
+.animated-item--translateY {
+  translate: 0 7rem;
+  opacity: 0;
+  visibility: hidden;
+  filter: blur(10px);
+}
+
+// naming is used in JS
+.animated-item--translateX {
+  translate: 17rem 0;
+  opacity: 0;
+  visibility: hidden;
+  filter: blur(10px);
+}
+
+// naming is used in JS
+.animated-item--random {
+  opacity: 0;
+  visibility: hidden;
+
+  @for $i from 1 through $workCount {
+    $translateX: (random(40) + 30);
+    $blur: (random(35) + 5);
+
+    &:nth-child(#{$i}) {
+      translate: #{$translateX}rem;
+      filter: blur(#{$blur}px);
+    }
+  }
+
+  transition: opacity $transition-short, translate $transition-middle,
+    filter $transition-middle;
+}
+
+.resume-link {
+  display: inline-block !important;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.4;
+  }
+}

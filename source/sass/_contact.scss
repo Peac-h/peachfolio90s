@@ -1,0 +1,45 @@
+.contact-section {
+  margin: max(1vw, 1rem) max(3vw, 3rem) max(1vw, 1rem) max(2vw, 2rem);
+  padding: max(1vw, 1rem) max(1.5vw, 1.5rem) max(1vw, 1rem) 0;
+  border-top-right-radius: max(2vw, 2rem);
+  border-bottom-right-radius: max(2vw, 2rem);
+  margin-left: max(-2vw, -2rem);
+
+  background: var(--col-black);
+  color: var(--col-tint);
+  z-index: 20;
+
+  display: flex;
+  position: relative;
+
+  .socials-container {
+    width: 10vw;
+    margin-right: 70vw;
+    align-self: flex-end;
+
+    .social-item {
+      transition: $transition-middle;
+
+      &:hover {
+        opacity: 0.4;
+      }
+
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+
+  .scroll-to-start-button {
+    white-space: nowrap;
+    align-self: flex-end;
+    transition: $transition-middle;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+}

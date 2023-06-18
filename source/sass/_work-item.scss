@@ -1,0 +1,152 @@
+// MAIN STYLING
+
+// namings are used in JS
+.work-item {
+  display: flex;
+  align-items: flex-start;
+  gap: max(2vw, 3rem);
+
+  @include font-mini;
+
+  padding: 0 1vw;
+  position: relative;
+  z-index: 1;
+
+  transition: opacity $transition-short, translate $transition-middle,
+    filter $transition-middle;
+
+  &::before {
+    content: "";
+    height: 92%;
+    width: 100%;
+    border-radius: max(1vw, 1rem);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: $transition-middle;
+  }
+
+  &:hover {
+    .work-img {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .work-img {
+    height: 3vw;
+    min-height: 7rem;
+    width: auto;
+
+    position: absolute;
+    right: 2vw;
+    top: 4vw;
+
+    filter: opacity(95%);
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: $transition-middle;
+  }
+
+  .work-index {
+    @include font-huge;
+    line-height: 2rem;
+  }
+
+  .work-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+
+    padding: 1rem 0 0;
+    border-top: 2px solid currentColor;
+
+    @media only screen and (min-width: $bp-huge) {
+      border-top: 3px solid currentColor;
+    }
+
+    .work-heading,
+    .work-header {
+      text-transform: uppercase;
+    }
+
+    .work-header {
+      a:link,
+      a:visited {
+        color: inherit;
+      }
+    }
+  }
+}
+
+// ALT. STYLES
+
+.work-item-styled {
+  width: max-content;
+  min-width: 35rem;
+  flex-direction: column;
+  padding: 0 2vw;
+  gap: 4vh;
+
+  @media only screen and (min-width: $bp-huge) {
+    min-width: 25vw;
+  }
+
+  .work-index {
+    padding-left: 3vw;
+    position: relative;
+    margin-bottom: auto;
+  }
+
+  .work-title {
+    @include font-big;
+    align-self: center;
+    text-align: center;
+    margin-bottom: auto;
+
+    .work-status {
+      @include font-regular;
+      background: var(--col-red);
+      color: var(--col-tint);
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  .work-tools {
+    align-self: flex-end;
+  }
+}
+
+// COLORS
+
+.work-style-yellow {
+  &::before {
+    background: var(--col-yellow);
+  }
+}
+.work-style-red {
+  &::before {
+    background: var(--col-red);
+  }
+}
+.work-style-white {
+  &::before {
+    background: var(--col-white);
+  }
+}
+.work-style-black {
+  color: var(--col-tint);
+  &::before {
+    background: var(--col-black);
+  }
+}

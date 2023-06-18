@@ -1,0 +1,60 @@
+.work-filter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  height: 17vh;
+  width: 100%;
+  padding: 2vw 1vw;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  transition: $transition-short;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+
+  &-title {
+    @media only screen and (max-width: $bp-large) {
+      @include font-big;
+    }
+  }
+
+  &-list {
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+
+    .list-item {
+      position: relative;
+      transition: $transition-middle;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover .filter-item {
+        transform: translateY(-100%);
+      }
+
+      .filter-item {
+        display: flex;
+        align-items: flex-end;
+        transition: $transition-middle;
+
+        &--hover {
+          position: absolute;
+          top: 100%;
+        }
+      }
+    }
+  }
+}

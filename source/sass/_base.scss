@@ -1,0 +1,102 @@
+:root {
+  // https://coolors.co/palette/3f3b38-aba99c-c0c0b6-fbefdf-e7aa2d-db4c44
+  --col-main: #b2b2a7;
+  --col-shade: #a8a89a;
+  --col-shade2: #9c9c8d;
+  --col-tint: #bebeb4;
+  --col-tint2: #c3c3ba;
+  --col-red: #db4c44;
+  --col-yellow: #e7aa2d;
+  --col-white: #fbefdf;
+  --col-black: #3f3b38;
+  --col-black-tint: #4d4844;
+  --col-black-shade: #35322f;
+}
+
+// BreakPoints
+$bp-huge: 137.5em; // 2200px min width
+$bp-large: 62.5em; // 1000px max width
+$bp-medium: 43.75em; // 700px max width
+$bp-small: 21em; // 336px max width
+
+// Variables
+$workCount: 26;
+$transition-long: 1s ease-out;
+$transition-middle: 0.4s ease-out;
+$transition-short: 0.2s ease-out;
+
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Genos&display=swap");
+
+@mixin font-mini {
+  font-size: clamp(1.5rem, 1vw, 10rem);
+}
+@mixin font-regular {
+  font-size: clamp(1.8rem, 1.3vw, 10rem);
+}
+@mixin font-big {
+  font-size: clamp(4rem, 2.5vw, 10rem);
+}
+@mixin font-huge {
+  font-size: clamp(6rem, 2.7vw, 20rem);
+}
+
+// General Code
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  // cursor: none; // leaving the cursor for better user experience
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background: var(--col-black);
+  color: var(--col-black);
+  font-family: "Genos", sans-serif;
+  @include font-regular;
+
+  .hero-section *::selection,
+  .profile-section *::selection,
+  .contact-section *::selection {
+    color: var(--col-black);
+    background: var(--col-main);
+  }
+  .work-section *::selection {
+    color: var(--col-main);
+    background: var(--col-black);
+  }
+
+  main {
+    display: flex;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font: inherit;
+  }
+
+  button {
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    color: inherit;
+    font: inherit;
+  }
+}

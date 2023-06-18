@@ -1,0 +1,33 @@
+.profile-section {
+  width: 105vw;
+  min-width: 100rem;
+  margin: max(1vw, 1rem) 0;
+  padding: max(1vw, 1rem);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+
+  border-top-left-radius: max(2vw, 2rem);
+  border-bottom-left-radius: max(2vw, 2rem);
+  background: var(--col-black);
+  color: var(--col-tint);
+
+  margin-left: -5vw;
+
+  .profile-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: max-content;
+
+    &-paragraph {
+      color: var(--col-red);
+      align-self: flex-start;
+    }
+
+    &-span {
+      display: block;
+    }
+  }
+}

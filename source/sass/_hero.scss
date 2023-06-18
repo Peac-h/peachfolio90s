@@ -1,0 +1,59 @@
+.hero-section {
+  margin: max(1vw, 1rem);
+  margin-left: max(3vw, 3rem);
+  z-index: 10;
+
+  display: flex;
+  background: var(--col-black);
+  color: var(--col-tint);
+  border-radius: max(2vw, 2rem);
+
+  transition: $transition-long;
+
+  .logo {
+    border-top-left-radius: max(2vw, 2rem);
+    border-bottom-left-radius: max(2vw, 2rem);
+    background: var(--col-black-shade);
+    padding: max(1vw, 1rem) max(1.5vw, 1.5rem);
+    cursor: pointer;
+
+    &-shape {
+      writing-mode: vertical-lr;
+      rotate: -180deg;
+    }
+
+    &-subtitle {
+      font-style: italic;
+    }
+  }
+
+  .hero-content {
+    width: 70vw;
+    min-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    padding: 15vh max(1.5vw, 1.5rem) max(1vw, 1rem) max(10vw, 7rem);
+
+    .introductory-text {
+      display: flex;
+      gap: max(7vw, 7rem);
+
+      margin-bottom: 10vh;
+
+      &__left,
+      &__right {
+        width: max-content;
+      }
+
+      &-span {
+        display: block;
+        transition: $transition-middle;
+      }
+    }
+
+    .current-time-georgia {
+      align-self: flex-end;
+      white-space: nowrap;
+    }
+  }
+}

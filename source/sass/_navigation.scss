@@ -1,0 +1,25 @@
+.navigation {
+  margin-bottom: auto;
+
+  .navigation-list {
+    list-style: none;
+    display: flex;
+    gap: max(5vw, 5rem);
+
+    .navigation-link,
+    .navigation-link:link,
+    .navigation-link:visited {
+      text-decoration: none;
+      color: var(--col-yellow);
+      transition: $transition-middle;
+    }
+
+    .navigation-link:hover {
+      opacity: 0.4;
+    }
+
+    .navigation-item {
+      transition: $transition-middle;
+    }
+  }
+}
