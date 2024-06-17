@@ -26,19 +26,19 @@ $transition-middle: 0.4s ease-out;
 $transition-short: 0.2s ease-out;
 
 // Font
-@import url("https://fonts.googleapis.com/css2?family=Genos&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 @mixin font-mini {
-  font-size: clamp(1.5rem, 1vw, 10rem);
+  font-size: clamp(1.3rem, 0.8vw, 8rem);
 }
 @mixin font-regular {
-  font-size: clamp(1.8rem, 1.3vw, 10rem);
+  font-size: clamp(1.6rem, 1.1vw, 8rem);
 }
 @mixin font-big {
-  font-size: clamp(4rem, 2.5vw, 10rem);
+  font-size: clamp(3.8rem, 2.3vw, 8rem);
 }
 @mixin font-huge {
-  font-size: clamp(6rem, 2.7vw, 20rem);
+  font-size: clamp(5.8rem, 2.5vw, 15rem);
 }
 
 // General Code
@@ -64,7 +64,7 @@ html {
 body {
   background: var(--col-black);
   color: var(--col-black);
-  font-family: "Genos", sans-serif;
+  font-family: "DM Sans", sans-serif;
   @include font-regular;
 
   .hero-section *::selection,

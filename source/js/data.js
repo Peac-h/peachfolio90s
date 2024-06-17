@@ -200,11 +200,4 @@ export default [
     link: "https://peac-h.github.io/28_tic-tac-toe/",
     type: "personal projects",
   },
-  {
-    title: "Introducing ChatGPT",
-    description: "Replica of the OpenAI (Introducing ChatGPT) landing page.",
-    tools: "scss, typescript, MVC architecture",
-    status: "Working on currently",
-    type: "website clones",
-  },
 ];

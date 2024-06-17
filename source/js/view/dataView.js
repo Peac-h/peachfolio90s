@@ -25,7 +25,7 @@ class DataView extends View {
     const classes = ["work-style-yellow", "work-style-red", "work-style-white", "work-style-black",];
 
     // prettier-ignore
-    const conditions = {"01": 0, "17": 3, "03": 3, "08": 2, "10": 2, "13": 2, "06": 1, "21": 1, "24": 0};
+    const conditions = {"01": 1, "03": 3, "08": 2, "10": 0, "13": 1, "24": 0};
 
     // prettier-ignore
     const styledNums = ["02", "03", "06", "00", "10", "15", "17", "20", "25", "23", "26"];

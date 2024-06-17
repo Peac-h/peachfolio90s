@@ -1,10 +1,10 @@
-# Peach Folio '90s
+# PeachPortolio'90s
 
 A project showcasing 90's design aesthetic, meticulously crafted using SCSS and vanilla JavaScript. The project follows the MVC architecture pattern and utilizes an OOP approach with ES6 Classes. Fully responsive for optimal user experience.
 
 ## Checkout The Live Demo
 
-[peachfolio90s.com](https://peachfolio90s.com/)
+[peachportfolio90s](https://peachportfolio90s.netlify.app/)
 
 ## The Design
 
