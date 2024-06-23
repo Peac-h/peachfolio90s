@@ -27,4 +27,4 @@ A project showcasing 90's design aesthetic, meticulously crafted using SCSS and 
 - [Github](https://github.com/Peac-h)
 - [LinkedIn](https://www.linkedin.com/in/tamta-lomidze-b336b9266/)
 - [Twitter](https://twitter.com/p6eac_h)
-- [Portfolio](https://peachfolio90s.com/](https://peachportfolio90s.netlify.app/)
+- [Portfolio](https://peachportfolio90s.netlify.app/)
